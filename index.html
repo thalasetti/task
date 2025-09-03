@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Join Our Community</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      padding: 30px;
+    }
+    .form-container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 450px;
+      margin: auto;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #333;
+    }
+    label {
+      font-weight: bold;
+      margin-bottom: 6px;
+      display: block;
+      color: #555;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    input[type="submit"] {
+      background-color: #0078D7;
+      color: white;
+      padding: 14px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+    }
+    input[type="submit"]:hover {
+      background-color: #005fa3;
+    }
+    .note {
+      font-size: 12px;
+      color: #888;
+      margin-top: -15px;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="form-container">
+  <h2>Welcome! Let's Get You Signed Up</h2>
+  <form action="/submit_registration" method="post">
+    <label for="name">What's your full name?</label>
+    <input type="text" id="name" name="name" placeholder="e.g. Priya Sharma" required>
+
+    <label for="email">Your email address</label>
+    <input type="email" id="email" name="email" placeholder="e.g. priya@example.com" required>
+
+    <label for="password">Create a password</label>
+    <input type="password" id="password" name="password" placeholder="Choose something secure" required>
+    <div class="note">Must be at least 8 characters</div>
+
+    <label for="gender">How do you identify?</label>
+    <select id="gender" name="gender">
+      <option value="">Select an option</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="nonbinary">Non-binary</option>
+      <option value="prefer_not">Prefer not to say</option>
+    </select>
+
+    <input type="submit" value="Create My Account">
+  </form>
+</div>
+
+</body>
+</html>
